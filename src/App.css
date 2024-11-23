@@ -179,6 +179,7 @@ p {
 }
 
 .career-title {
+    font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
@@ -301,6 +302,7 @@ p {
 
 /* セクションタイトル */
 .section-title {
+
   text-align: center;
   font-size: 1.8rem;
   margin: 40px 0 20px;
@@ -318,4 +320,77 @@ p {
   font-weight: bold;
   color: #999;
   margin-top: 20px;
+}
+
+/* 山本 陣‐Jin Yamamoto- のフォント */
+.name {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* My Portfolio, フロントエンドプロダクト, バックエンドプロダクト のフォント */
+.section-title,
+.app h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.name {
+    color: #2c3e50;
+}
+.section-title {
+    color: #34495e;
+}
+
+.self-pr {
+  margin-top: 20px;
+}
+
+.self-pr-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.self-pr-details {
+  padding: 10px 15px;
+font-size: 1.2rem;
+  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 経歴セクションと自己PRセクションで共通化 */
+.common-section {
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.common-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.common-title:hover {
+  color: #007bff;
+}
+
+.common-details {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
 }

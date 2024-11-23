@@ -6,9 +6,14 @@ import "./App.css";
 
 function App() {
   const [showCareer, setShowCareer] = useState(false);
+  const [showSelfPR, setShowSelfPR] = useState(false);
 
   const toggleCareer = () => {
     setShowCareer(!showCareer);
+  };
+
+  const toggleSelfPR = () => {
+    setShowSelfPR(!showSelfPR);
   };
 
   return (
@@ -21,7 +26,7 @@ function App() {
             className="profile-image"
           />
           <div className="profile-name-section">
-            <h1 className="name">山本 陣-Jin Yamamoto-</h1>
+            <h1 className="name">山本 陣 -Jin Yamamoto-</h1>
             <div className="social-icons">
               <a
                 href="https://x.com/Jinyama0902"
@@ -98,12 +103,12 @@ function App() {
         </div>
 
         {/* 経歴セクション */}
-        <div className="career">
-          <h2 className="career-title" onClick={toggleCareer}>
+        <div className="career common-section">
+          <h2 className="career-title common-title" onClick={toggleCareer}>
             経歴 {showCareer ? "▲" : "▼"}
           </h2>
           {showCareer && (
-            <div className="career-details">
+            <div className="career-details common-details">
               <div className="profile-row">
                 <strong>2016年3月:</strong>
                 <span>
@@ -151,6 +156,46 @@ function App() {
                   新生活に向け、技術の勉強かつ、転職活動中
                 </span>
               </div>
+            </div>
+          )}
+        </div>
+
+        <div className="self-pr common-section">
+          <h2 className="self-pr-title common-title" onClick={toggleSelfPR}>
+            自己PR {showSelfPR ? "▲" : "▼"}
+          </h2>
+          {showSelfPR && (
+            <div className="self-pr-details common-details">
+              <p>
+                私はこれまで約8年間営業職やデザイン提案業務を通じて、
+                <br />
+                多くのクライアントと関わり、
+                <br />
+                問題解決能力やコミュニケーションスキルを磨いてきました。
+                <br />
+                プログラミングにおいても、常に新しい技術を学び続ける姿勢を持ち、
+                <br />
+                チーム開発では積極的に自分の意見を発信することを心掛けています。
+              </p>
+              <p>
+                また、自分の個性を活かしたプロジェクト作りが得意です。
+                <br />
+                人と異なるものができると素直にうれしいです。
+                <br />
+                特にフロントエンド側の作業は好きで、
+                <br />
+                見た人の心がわくわくするようなプロダクトづくりを心掛けてきました。
+                <br />
+                卒業制作ではフロントエンドもバックエンドもどちらも挑戦し、
+                <br />
+                良質なプロダクトには片方のみの知識では到底届かないと気付き、
+                <br />
+                現在、バックエンドも勉強しています。
+                <br />
+                今後はフロントエンドとバックエンドのスキルをさらに伸ばし、
+                <br />
+                幅広い分野で活躍できるエンジニアを目指しています。
+              </p>
             </div>
           )}
         </div>
