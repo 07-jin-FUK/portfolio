@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 import LinkCard from "./components/LinkCard";
@@ -16,8 +16,19 @@ function App() {
     setShowSelfPR(!showSelfPR);
   };
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // ページが読み込まれたときにクラスを適用
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100); // 0.1秒の遅延後に表示開始
+
+    return () => clearTimeout(timer); // クリーンアップ
+  }, []);
+
   return (
-    <div className="app">
+    <div className={`app fade-in ${isVisible ? "visible" : ""}`}>
       <div className="intro">
         <div className="profile-header">
           <img

@@ -394,3 +394,20 @@ font-size: 1.2rem;
   color: #333;
   text-align: left;
 }
+
+/* フェードインアニメーション */
+.fade-in {
+  opacity: 0;
+  /* 初期状態は透明 */
+  transform: translateY(20px);
+  /* 下から少し移動 */
+  transition: opacity 1.2s ease, transform 1.2s ease;
+  /* ふわっと上がる動き */
+}
+
+.fade-in.visible {
+  opacity: 1;
+  /* 完全に表示 */
+  transform: translateY(0);
+  /* 元の位置に移動 */
+}
