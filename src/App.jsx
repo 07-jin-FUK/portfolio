@@ -214,6 +214,16 @@ function App() {
 
       <h1>My Portfolio</h1>
       <p>It all started with cheese.</p>
+      <h2 className="section-title"> New Products‼</h2>
+      <div className="link-cards">
+        <LinkCard
+          text="徒競走（運ゲー）"
+          url="https://king-game.vercel.app/"
+          imageUrl="/images/king.jpg"
+          githubUrls={["https://github.com/07-jin-FUK/SimpleRace"]}
+          description="だれか一人優勝者を決めるシンプルなレースゲームを作成しました。"
+        />
+      </div>
       <h2 className="section-title">フロントエンドプロダクト</h2>
       <div className="link-cards">
         <LinkCard
