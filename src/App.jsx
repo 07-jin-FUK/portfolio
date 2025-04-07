@@ -62,29 +62,7 @@ function App() {
       <div className="test-section">
   <p>iOSデバイスの灰色枠テスト</p>
 
-  <div className="test test1">
-    <p>① border: none のみ</p>
-    <div className="video-wrap">
-      <video
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="none"
-        poster="/images/img-maker-parts.jpg"
-  
-      >
-        <source src="/images/mov-maker.webm" type="video/webm" />
-        <source src="/images/mov-maker.mp4" type="video/mp4" />
-      </video>
-      <img
-        className="video-image"
-        src="/images/img-maker-parts.jpg"
-        alt="取扱商品"
-        loading="lazy"
-      />
-    </div>
-  </div>
+
 
   <div className="test test2">
     <p>② outline: none のみ</p>
@@ -110,29 +88,7 @@ function App() {
     </div>
   </div>
 
-  <div className="test test3">
-    <p>③ box-shadow: none のみ</p>
-    <div className="video-wrap">
-      <video
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="none"
-        poster="/images/img-maker-parts.jpg"
-   
-      >
-        <source src="/images/mov-maker.webm" type="video/webm" />
-        <source src="/images/mov-maker.mp4" type="video/mp4" />
-      </video>
-      <img
-        className="video-image"
-        src="/images/img-maker-parts.jpg"
-        alt="取扱商品"
-        loading="lazy"
-      />
-    </div>
-  </div>
+
 
   <div className="test test4">
     <p>④ -webkit-appearance: none のみ</p>
