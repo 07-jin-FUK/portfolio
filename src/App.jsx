@@ -207,7 +207,7 @@ function App() {
   </div>
   
   <div className="test test7">
-    <p>⑥ filter: border outline none のみ</p>
+    <p>⑦ filter: border outline none のみ</p>
     <div className="video-wrap">
       <video
         playsInline
@@ -231,7 +231,7 @@ function App() {
   </div>
 
   <div className="test test8">
-    <p>⑦ 全部込み（border / outline / box-shadow / appearance / display / overflow / filter）</p>
+    <p>⑧ 全部込み（border / outline / box-shadow / appearance / display / overflow / filter）</p>
     <div className="video-wrap">
       <video
         playsInline

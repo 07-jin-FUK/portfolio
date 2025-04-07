@@ -423,7 +423,9 @@ font-size: 1.2rem;
         width: 100%;
     }
     
-    img
+    img{
+        width: 100%;
+    }
     
     .test1 video {
       border: none !important;
