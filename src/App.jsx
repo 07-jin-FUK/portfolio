@@ -64,106 +64,15 @@ function App() {
 
 
 
-  <div className="test test2">
-    <p>② outline: none のみ</p>
-    <div className="video-wrap">
-      <video
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="none"
-        poster="/images/img-maker-parts.jpg"
-  
-      >
-        <source src="/images/mov-maker.webm" type="video/webm" />
-        <source src="/images/mov-maker.mp4" type="video/mp4" />
-      </video>
-      <img
-        className="video-image"
-        src="/images/img-maker-parts.jpg"
-        alt="取扱商品"
-        loading="lazy"
-      />
-    </div>
-  </div>
+ 
 
 
 
-  <div className="test test4">
-    <p>④ -webkit-appearance: none のみ</p>
-    <div className="video-wrap">
-      <video
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="none"
-        poster="/images/img-maker-parts.jpg"
-   
-      >
-        <source src="/images/mov-maker.webm" type="video/webm" />
-        <source src="/images/mov-maker.mp4" type="video/mp4" />
-      </video>
-      <img
-        className="video-image"
-        src="/images/img-maker-parts.jpg"
-        alt="取扱商品"
-        loading="lazy"
-      />
-    </div>
-  </div>
+ 
 
-  <div className="test test5">
-    <p>⑤ display: block のみ</p>
-    <div className="video-wrap">
-      <video
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="none"
-        poster="/images/img-maker-parts.jpg"
-  
-      >
-        <source src="/images/mov-maker.webm" type="video/webm" />
-        <source src="/images/mov-maker.mp4" type="video/mp4" />
-      </video>
-      <img
-        className="video-image"
-        src="/images/img-maker-parts.jpg"
-        alt="取扱商品"
-        loading="lazy"
-      />
-    </div>
-  </div>
 
   <div className="test test6">
     <p>⑥ overflow: hidden のみ</p>
-    <div className="video-wrap">
-      <video
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="none"
-        poster="/images/img-maker-parts.jpg"
-
-      >
-        <source src="/images/mov-maker.webm" type="video/webm" />
-        <source src="/images/mov-maker.mp4" type="video/mp4" />
-      </video>
-      <img
-        className="video-image"
-        src="/images/img-maker-parts.jpg"
-        alt="取扱商品"
-        loading="lazy"
-      />
-    </div>
-  </div>
-  
-  <div className="test test7">
-    <p>⑦ filter: border outline none のみ</p>
     <div className="video-wrap">
       <video
         playsInline
