@@ -26,16 +26,236 @@ function App() {
 
     return () => clearTimeout(timer); // クリーンアップ
   }, []);
+  
+  useEffect(() => {
+    const videoWraps = document.querySelectorAll(".video-wrap");
+  
+    videoWraps.forEach((wrap) => {
+      const video = wrap.querySelector("video");
+      const img = wrap.querySelector(".video-image");
+  
+      if (video && img) {
+        // 動画が再生できたかチェック
+        const checkVideo = () => {
+          video
+            .play()
+            .then(() => {
+              // 再生成功 → imgを非表示に（あれば）
+              img.style.display = "none";
+            })
+            .catch(() => {
+              // 再生失敗 → imgを表示
+              video.style.display = "none";
+              img.style.display = "block";
+            });
+        };
+  
+        checkVideo();
+      }
+    });
+  }, []);
+  
 
-  return (
+  return (    
     <div className={`app fade-in ${isVisible ? "visible" : ""}`}>
       <div className="intro">
-        <div className="profile-header">
-          <img
-            src="/images/kouyou.jpeg"
-            alt="プロフィール写真"
-            className="profile-image"
-          />
+      <div className="test-section">
+  <p>iOSデバイスの灰色枠テスト</p>
+
+  <div className="test test1">
+    <p>① border: none のみ</p>
+    <div className="video-wrap">
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="none"
+        poster="/images/img-maker-parts.jpg"
+  
+      >
+        <source src="/images/mov-maker.webm" type="video/webm" />
+        <source src="/images/mov-maker.mp4" type="video/mp4" />
+      </video>
+      <img
+        className="video-image"
+        src="/images/img-maker-parts.jpg"
+        alt="取扱商品"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <div className="test test2">
+    <p>② outline: none のみ</p>
+    <div className="video-wrap">
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="none"
+        poster="/images/img-maker-parts.jpg"
+  
+      >
+        <source src="/images/mov-maker.webm" type="video/webm" />
+        <source src="/images/mov-maker.mp4" type="video/mp4" />
+      </video>
+      <img
+        className="video-image"
+        src="/images/img-maker-parts.jpg"
+        alt="取扱商品"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <div className="test test3">
+    <p>③ box-shadow: none のみ</p>
+    <div className="video-wrap">
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="none"
+        poster="/images/img-maker-parts.jpg"
+   
+      >
+        <source src="/images/mov-maker.webm" type="video/webm" />
+        <source src="/images/mov-maker.mp4" type="video/mp4" />
+      </video>
+      <img
+        className="video-image"
+        src="/images/img-maker-parts.jpg"
+        alt="取扱商品"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <div className="test test4">
+    <p>④ -webkit-appearance: none のみ</p>
+    <div className="video-wrap">
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="none"
+        poster="/images/img-maker-parts.jpg"
+   
+      >
+        <source src="/images/mov-maker.webm" type="video/webm" />
+        <source src="/images/mov-maker.mp4" type="video/mp4" />
+      </video>
+      <img
+        className="video-image"
+        src="/images/img-maker-parts.jpg"
+        alt="取扱商品"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <div className="test test5">
+    <p>⑤ display: block のみ</p>
+    <div className="video-wrap">
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="none"
+        poster="/images/img-maker-parts.jpg"
+  
+      >
+        <source src="/images/mov-maker.webm" type="video/webm" />
+        <source src="/images/mov-maker.mp4" type="video/mp4" />
+      </video>
+      <img
+        className="video-image"
+        src="/images/img-maker-parts.jpg"
+        alt="取扱商品"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <div className="test test6">
+    <p>⑥ overflow: hidden のみ</p>
+    <div className="video-wrap">
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="none"
+        poster="/images/img-maker-parts.jpg"
+
+      >
+        <source src="/images/mov-maker.webm" type="video/webm" />
+        <source src="/images/mov-maker.mp4" type="video/mp4" />
+      </video>
+      <img
+        className="video-image"
+        src="/images/img-maker-parts.jpg"
+        alt="取扱商品"
+        loading="lazy"
+      />
+    </div>
+  </div>
+  
+  <div className="test test7">
+    <p>⑥ filter: border outline none のみ</p>
+    <div className="video-wrap">
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="none"
+        poster="/images/img-maker-parts.jpg"
+
+      >
+        <source src="/images/mov-maker.webm" type="video/webm" />
+        <source src="/images/mov-maker.mp4" type="video/mp4" />
+      </video>
+      <img
+        className="video-image"
+        src="/images/img-maker-parts.jpg"
+        alt="取扱商品"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <div className="test test8">
+    <p>⑦ 全部込み（border / outline / box-shadow / appearance / display / overflow / filter）</p>
+    <div className="video-wrap">
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="none"
+        poster="/images/img-maker-parts.jpg"
+    
+      >
+        <source src="/images/mov-maker.webm" type="video/webm" />
+        <source src="/images/mov-maker.mp4" type="video/mp4" />
+      </video>
+      <img
+        className="video-image"
+        src="/images/img-maker-parts.jpg"
+        alt="取扱商品"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</div>
+
+
           <div className="profile-name-section">
             <h1 className="name">山本 陣 -Jin Yamamoto-</h1>
             <div className="social-icons">
@@ -111,7 +331,7 @@ function App() {
               </span>
             </div>
           </div>
-        </div>
+    
 
         {/* 経歴セクション */}
         <div className="career common-section">

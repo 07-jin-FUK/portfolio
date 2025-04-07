@@ -411,3 +411,64 @@ font-size: 1.2rem;
   transform: translateY(0);
   /* 元の位置に移動 */
 }
+
+
+.test {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+@media screen and (max-width: 768px) {
+    
+    video {
+        width: 100%;
+    }
+    
+    img
+    
+    .test1 video {
+      border: none !important;
+    }
+  
+    .test2 video {
+      outline: none !important;
+    }
+  
+    .test3 video {
+      box-shadow: none !important;
+    }
+  
+    .test4 video {
+        -webkit-appearance: none !important; /* Safari, iOS用 */
+        -moz-appearance: none !important; /* Firefox用 */
+             appearance: none !important;  /* 標準仕様 */
+    }
+  
+    .test5 video {
+        background-color: transparent;
+      display: block !important;
+    }
+  
+    .test6 video {
+      overflow: hidden !important;
+    }
+    
+    .test7 video {
+    filter: drop-shadow(0px 0px rgba(0,0,0,0)) !important;
+        outline: none !important;
+        border: none !important;
+      }
+
+  
+    .test8 video {
+      border: none !important;
+      outline: none !important;
+      filter: drop-shadow(0px 0px rgba(0,0,0,0)) !important;
+      box-shadow: none !important;
+      -webkit-appearance: none !important; /* Safari, iOS用 */
+      -moz-appearance: none !important; /* Firefox用 */
+           appearance: none !important;  /* 標準仕様 */
+      display: block !important;
+      overflow: hidden !important;
+    }
+  }
+  
