@@ -59,67 +59,6 @@ function App() {
   return (    
     <div className={`app fade-in ${isVisible ? "visible" : ""}`}>
       <div className="intro">
-      <div className="test-section">
-  <p>iOSデバイスの灰色枠テスト</p>
-
-
-
- 
-
-
-
- 
-
-
-  <div className="test test6">
-    <p>⑥ overflow: hidden のみ</p>
-    <div className="video-wrap">
-      <video
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="none"
-        poster="/images/img-maker-parts.jpg"
-
-      >
-        <source src="/images/mov-maker.webm" type="video/webm" />
-        <source src="/images/mov-maker.mp4" type="video/mp4" />
-      </video>
-      <img
-        className="video-image"
-        src="/images/img-maker-parts.jpg"
-        alt="取扱商品"
-        loading="lazy"
-      />
-    </div>
-  </div>
-
-  <div className="test test8">
-    <p>⑧ 全部込み（border / outline / box-shadow / appearance / display / overflow / filter）</p>
-    <div className="video-wrap">
-      <video
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="none"
-        poster="/images/img-maker-parts.jpg"
-    
-      >
-        <source src="/images/mov-maker.webm" type="video/webm" />
-        <source src="/images/mov-maker.mp4" type="video/mp4" />
-      </video>
-      <img
-        className="video-image"
-        src="/images/img-maker-parts.jpg"
-        alt="取扱商品"
-        loading="lazy"
-      />
-    </div>
-  </div>
-</div>
-
 
           <div className="profile-name-section">
             <h1 className="name">山本 陣 -Jin Yamamoto-</h1>
